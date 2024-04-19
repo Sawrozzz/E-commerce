@@ -9,6 +9,7 @@ import CarCard from "./CarCard";
 import SearchManufacturer from "./SearchManufacturer";
 import CarDetails from "./CarDetails";
 import ShowMore from "./ShowMore";
+import SubscriptionCard from "./SubsciptionCard";
 export { Hero, CustomButton, Navbar, Footer
 ,
 CustomFilter,
@@ -17,4 +18,5 @@ SearchManufacturer,
 CarCard,
 CarDetails,
 ShowMore,
+SubscriptionCard,
 };

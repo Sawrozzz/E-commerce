@@ -51,3 +51,9 @@ export interface ShowMoreProps {
 export interface HomeProps {
   searchParams: FilterProps;
 }
+export interface SubscriptionProps {
+  title:string;
+  price: number;
+  features: string[];
+}
+
