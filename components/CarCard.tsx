@@ -5,7 +5,7 @@ import Image from "@/node_modules/next/image";
 import { CarProps } from "@/types/index";
 import CustomButton from "./CustomButton";
 import {useRouter} from 'next/navigation'
-import { calculateCarRent, generateCarImageUrl } from "@/utils/index";
+import { calculateCarRent } from "@/utils/index";
 import CarDetails from "./CarDetails";
 interface CarCardProps {
   car: CarProps;
@@ -16,7 +16,8 @@ const CarCard = ({ car }: CarCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 const handleRent = ()=>{
-router.push('/signup')
+  console.log("clicked")
+router.push('/rent')
 }
   return (
     <div className="car-card group">
@@ -44,8 +45,11 @@ router.push('/signup')
         containerStyles="w-full py-[16px] rounded-full bg-primary-blue"
         textStyles = "text-white text-[14px] leading-[17px] font-bold"
         handleClick={()=>handleRent()}
-       
         />
+        {/* <button
+        className="w-full py-[16px] rounded-full bg-primary-blue"
+        onClick={()=>handleRent()}
+        >Rent Here</button> */}
       </div>
       <div className="relative flex w-full mt-2">
         <div className="flex group-hover:invisible w-full justify-between text-grey">

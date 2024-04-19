@@ -1,7 +1,7 @@
 // pages/signin.tsx
 'use client'
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/navigation'
 
 const SignInPage: React.FC = () => {
   const router = useRouter();

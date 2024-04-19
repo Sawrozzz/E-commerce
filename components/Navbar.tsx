@@ -1,9 +1,16 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {useRouter} from 'next/navigation'
 import CustomButton from "./CustomButton";
 import SignInPage from "../app/pages/signup";
 const Navbar = () => {
+  const handleSignUp =()=>{
+   router.push('/signup')
+  }
+  const router = useRouter();
 
   return (
     <header className="w-full absolute z-10">
@@ -25,6 +32,7 @@ const Navbar = () => {
           btnType="button"
           containerStyles="text-primary-blue 
           rounded-full bg-white min-w-[130px]"
+          handleClick={()=>handleSignUp()}
         />
       </nav>
     </header>
