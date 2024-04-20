@@ -35,7 +35,7 @@ router.push('/rent')
         <Image
           width={200}
           height={30}
-          src='/hero.png'
+          src='/carlist.png'
           alt="car model"
           className="object-contain"
         />

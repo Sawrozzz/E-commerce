@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import { CarCard, CustomFilter, ShowMore } from "@/components/index";
+import { CarCard, CustomFilter, Navbar, ShowMore } from "@/components/index";
 import { SearchBar } from "@/components/index";
 import { fetchCars } from "@/utils/index";
 import { fuels, yearsOfProduction } from "@/constants/index";
@@ -18,6 +18,7 @@ export default async function Home({ searchParams }: HomeProps) {
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
     <main className="overflow-hidden">
+      <Navbar />
       <Hero />
 
       <div className="mt-12 padding-x padding-y max-width" id="discover">

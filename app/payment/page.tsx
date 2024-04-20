@@ -1,6 +1,7 @@
 
 'use client'
 import React, { useState } from 'react';
+import {useRouter} from 'next/navigation';
 
 const PaymentMethodForm = () => {
   // State variables to store form data
@@ -8,6 +9,12 @@ const PaymentMethodForm = () => {
   const [cardNumber, setCardNumber] = useState('');
   const [expiryDate, setExpiryDate] = useState('');
   const [cvv, setCvv] = useState('');
+   const router = useRouter();
+  const handlePay = () =>{
+
+    router.push('/success')
+  
+  }
 
   // Function to handle form submission
   const handleSubmit = (e) => {
@@ -51,7 +58,7 @@ const PaymentMethodForm = () => {
         </div>
         {/* Submit Button */}
         <div className="flex items-center justify-center">
-          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pay Now</button>
+          <button onClick={()=>handlePay()} type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pay Now</button>
         </div>
       </form>
     </div>

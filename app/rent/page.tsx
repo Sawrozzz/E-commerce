@@ -87,10 +87,10 @@ const BuyNow = () => {
   return (
    <div className='container mt-4 px-4 py-8'>
 
-    <h1 className='text-3xl font-semibold mb-8 flex justify-center mt-36'>
+    <h1 className='text-3xl font-semibold mb-8 flex justify-center mt-10'>
       Subscription Packages
     </h1>
-<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+<div className='grid grid-cols-1 md:grid-cols-3 gap-8 my-12'>
  {
   packages.map((packag, index)=>(
     <SubscriptionCard 
