@@ -2,6 +2,8 @@
 'use client'
 import React, { useState } from 'react';
 import {useRouter} from 'next/navigation';
+import { toast } from 'react-hot-toast';
+
 
 const PaymentMethodForm = () => {
   // State variables to store form data
@@ -11,10 +13,10 @@ const PaymentMethodForm = () => {
   const [cvv, setCvv] = useState('');
    const router = useRouter();
   const handlePay = () =>{
-
     router.push('/success')
-  
+    toast.success("You did it ")
   }
+  
 
   // Function to handle form submission
   const handleSubmit = (e) => {

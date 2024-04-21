@@ -19,7 +19,6 @@ const SignInPage: React.FC = () => {
       setPassword(storedPassword);
       setLoggedIn(true);
     }
-    // Redirect to the dashboard after successful sign-in
     router.push("/");
   };
 

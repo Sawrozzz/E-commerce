@@ -1,3 +1,6 @@
+'use client'
+
+
 import Hero from "@/components/Hero";
 import { CarCard, CustomFilter, Navbar, ShowMore } from "@/components/index";
 import { SearchBar } from "@/components/index";
@@ -13,11 +16,12 @@ export default async function Home({ searchParams }: HomeProps) {
     limit: searchParams.limit || 10,
     model: searchParams.model || "",
   });
-  
+ 
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
     <main className="overflow-hidden">
+
       <Navbar />
       <Hero />
 

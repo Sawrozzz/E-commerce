@@ -59,51 +59,45 @@
 // };
 // export default BuyNow;
 
-
-
-import SubscriptionCard from '@/components/SubsciptionCard';
-import React from 'react'
+import SubscriptionCard from "@/components/SubsciptionCard";
+import React from "react";
 
 const BuyNow = () => {
   const packages = [
     {
-      title: '1 Day',
+      title: "1 Day",
       price: 3000,
-      features: ['Feature 1', 'Feature 2', 'Feature 3'],
+      features: ["Feature 1", "Feature 2", "Feature 3"],
     },
     {
-      title: '1 Week',
+      title: "1 Week",
       price: 15000,
-      features: ['Feature 1', 'Feature 2', 'Feature 3', ],
+      features: ["Feature 1", "Feature 2", "Feature 3"],
     },
     {
-      title: '1 Month',
+      title: "1 Month",
       price: 50000,
-      features: ['Feature 1', 'Feature 2', 'Feature 3', ],
+      features: ["Feature 1", "Feature 2", "Feature 3"],
     },
   ];
 
-
   return (
-   <div className='container mt-4 px-4 py-8'>
-
-    <h1 className='text-3xl font-semibold mb-8 flex justify-center mt-10'>
-      Subscription Packages
-    </h1>
-<div className='grid grid-cols-1 md:grid-cols-3 gap-8 my-12'>
- {
-  packages.map((packag, index)=>(
-    <SubscriptionCard 
-    key={index}
-    title={packag.title}
-    price = {packag.price}
-    features = {packag.features}
-    />
-  ))
- }
-</div>
-   </div>
-  )
-}
+    <div className="container mt-4 px-4 py-8">
+      <h1 className="text-3xl font-semibold mb-8 flex justify-center mt-10">
+        Subscription Packages
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+        {packages.map((packag, index) => (
+          <SubscriptionCard
+            key={index}
+            title={packag.title}
+            price={packag.price}
+            features={packag.features}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default BuyNow;
