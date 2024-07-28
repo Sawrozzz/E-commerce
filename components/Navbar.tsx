@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {useRouter} from 'next/navigation'
 import CustomButton from "./CustomButton";
-import SignInPage from "../app/pages/signup";
 const Navbar = () => {
   const handleSignUp =()=>{
    router.push('/signup')

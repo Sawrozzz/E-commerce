@@ -1,6 +1,4 @@
 'use client'
-
-
 import Hero from "@/components/Hero";
 import { CarCard, CustomFilter, Navbar, ShowMore } from "@/components/index";
 import { SearchBar } from "@/components/index";

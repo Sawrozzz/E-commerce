@@ -7,7 +7,7 @@ import CustomButton from "./CustomButton";
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const textToType = "Find, book or rent a car - quickly and easily";
-  const typingSpeed = 200; 
+  const typingSpeed = 80; 
 
   useEffect(() => {
    

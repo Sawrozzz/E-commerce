@@ -14,7 +14,7 @@ const PaymentMethodForm = () => {
    const router = useRouter();
   const handlePay = () =>{
     router.push('/success')
-    toast.success("You did it ")
+    toast.success("Payment SuccessFull ")
   }
   
 
