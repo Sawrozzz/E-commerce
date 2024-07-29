@@ -9,6 +9,9 @@ const Navbar = () => {
   const handleSignUp =()=>{
    router.push('/signup')
   }
+   const handleLogin = () => {
+     router.push("/login");
+   };
   const router = useRouter();
 
   return (
@@ -26,13 +29,22 @@ const Navbar = () => {
             className="object-contain"
           />
         </Link>
-        <CustomButton
-          title="Sign In"
-          btnType="button"
-          containerStyles="text-primary-blue 
+        <ul className="flex justify-center gap-5">
+          <CustomButton
+            title="Sign In"
+            btnType="button"
+            containerStyles="text-primary-blue 
           rounded-full bg-white min-w-[130px]"
-          handleClick={()=>handleSignUp()}
-        />
+            handleClick={() => handleSignUp()}
+          />
+          <CustomButton
+            title="Login"
+            btnType="button"
+            containerStyles="text-primary-blue 
+          rounded-full bg-white min-w-[130px]"
+            handleClick={() => handleLogin()}
+          />
+        </ul>
       </nav>
     </header>
   );

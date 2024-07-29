@@ -46,10 +46,7 @@ const CarCard = ({ car }: CarCardProps) => {
           textStyles="text-white text-[14px] leading-[17px] font-bold"
           handleClick={() => handleRent()}
         />
-        {/* <button
-        className="w-full py-[16px] rounded-full bg-primary-blue"
-        onClick={()=>handleRent()}
-        >Rent Here</button> */}
+    
       </div>
       <div className="relative flex w-full mt-2">
         <div className="flex group-hover:invisible w-full justify-between text-grey">
