@@ -6,7 +6,7 @@ const PaymentSuccess = () => {
   const router = useRouter();
 
   const handleHome = () => {
-    router.push('/');
+    window.location.assign("/");
   };
 
   return (

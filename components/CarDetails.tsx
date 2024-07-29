@@ -1,7 +1,7 @@
 "use client";
 import { CarProps } from "@/types/index";
 import { Fragment } from "react";
-import Image from "next/image";
+import Image from "@/node_modules/next/image";
 import { Dialog, Transition } from "@headlessui/react";
 
 interface CarDetailsProps {
